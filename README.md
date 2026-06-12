@@ -28,7 +28,7 @@ El archivo original presentaba varios problemas comunes en datos reales:
 
 | Problema | Solución implementada |
 |----------|----------------------|
-| Separador `|` en lugar de coma | `pd.read_csv(sep='|')` |
+| Separador '|' en lugar de coma | `pd.read_csv(sep='|')` |
 | Caracteres extraños (`Ã¡`, `Ã³`, `Ã±`) | `.str.replace()` para normalizar a `á`, `ó`, `ñ` |
 | Columna SEXO numérica (1,2) | Mapeo con diccionario: `{1: 'Hombre', 2: 'Mujer'}` |
 | Tipos de datos mixtos | `pd.to_numeric(errors='coerce')` |
